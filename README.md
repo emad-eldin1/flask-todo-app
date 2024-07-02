@@ -3,12 +3,24 @@
 This is a simple To-Do List web application built with Flask. It allows users to add and delete tasks.
 
 ## Project Structure
-
+```
+flask_todo/
+├── app.py
+├── README.md
+├── requirements.txt
+├── tests/
+│   ├── test_app.py
+│   └── test_templates/
+│       └── test_index.html
+└── templates/
+    └── index.html
+```
 
 ## Requirements
 
-- Python 3
-- Flask
+- Python (version 3.6 or higher)
+- Flask (`pip install Flask`)
+- pytest (for running tests, `pip install pytest`)
 
 ## Setup Instructions
 
@@ -37,6 +49,13 @@ This is a simple To-Do List web application built with Flask. It allows users to
 ```sh 
 python app.py
 ```
-
+## Running Tests
+```
+pytest
+```
+## Usage
+- Adding a Task: Enter a task in the input field and click "Add Task".
+- Deleting a Task: Click the "Delete" button next to the task you want to remove.
+- The To-Do list updates dynamically with each action.
 
 # flask-todo-app
