@@ -7,7 +7,7 @@ This is a simple To-Do List web application built with Flask. It allows users to
 
 ## Requirements
 
-- Python 3.x
+- Python 3
 - Flask
 
 ## Setup Instructions
@@ -39,3 +39,4 @@ python app.py
 ```
 
 
+# flask-todo-app
