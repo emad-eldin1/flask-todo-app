@@ -58,4 +58,23 @@ pytest
 - Deleting a Task: Click the "Delete" button next to the task you want to remove.
 - The To-Do list updates dynamically with each action.
 
+## Build & Run Docker Image
+
+###Step 1: Tag Your Docker Image
+
+``` 
+docker tag emad-app:latest emadeldin1/flask-todo-app:latest
+```
+### Step 2: Login to Docker Hub
+``` 
+docker login
+```
+### Step 3: Push to Docker Hub
+```
+docker push emadeldin1/flask-todo-app:latest
+```
+### Step4: Pull from Docker Hub
+```
+docker pull emadeldin1/flask-todo-app:latest
+```
 # flask-todo-app
