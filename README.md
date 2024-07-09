@@ -2,19 +2,7 @@
 
 This is a simple To-Do List web application built with Flask. It allows users to add and delete tasks.
 
-## Project Structure
-```
-flask_todo/
-├── app.py
-├── README.md
-├── requirements.txt
-├── tests/
-│   ├── test_app.py
-│   └── test_templates/
-│       └── test_index.html
-└── templates/
-    └── index.html
-```
+
 
 ## Requirements
 
@@ -60,20 +48,28 @@ pytest
 
 ## Build & Run Docker Image
 
-###Step 1: Tag Your Docker Image
+###Step 1: build image 
+```
+docker build -t emad-app:latest .
+```
+###Step2 : Running process 
+```
+docker run -p 5000:5000 emad-app
+```
+###Step 3: Tag Your Docker Image
 
 ``` 
 docker tag emad-app:latest emadeldin1/flask-todo-app:latest
 ```
-### Step 2: Login to Docker Hub
+### Step 4: Login to Docker Hub
 ``` 
 docker login
 ```
-### Step 3: Push to Docker Hub
+### Step 5: Push to Docker Hub
 ```
 docker push emadeldin1/flask-todo-app:latest
 ```
-### Step4: Pull from Docker Hub
+### Step6: Pull from Docker Hub
 ```
 docker pull emadeldin1/flask-todo-app:latest
 ```
